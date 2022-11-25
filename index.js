@@ -37,26 +37,6 @@ async function run() {
 }
 run().catch(err => console.error(err));
 
-// const categories = require('./data/categories.json')
-// const products = require('./data/products.json')
-
-
-
-// app.get('/categories', (req, res) => {
-//     res.send(categories)
-// })
-
-// app.get('/category/:id', (req, res) =>{
-//     const id = req.params.id;
-//     const category_products = products.filter(n => n.category_id === id)
-//     res.send(category_products)
-// })
-// app.get('/products/:id', (req, res) =>{
-//     const id = req.params.id;
-//     const selectedProducts = products.find( n => n._id === id);
-//     res.send(selectedProducts)
-// })
-
 app.get('/', (req, res) => {
     res.send('Resale Server is running')
 })
